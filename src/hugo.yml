@@ -1,0 +1,69 @@
+baseurl: "https://www.linodians.com/"
+title: "Linodians"
+theme: "linodians-2025"
+
+enableEmoji: true
+
+params:
+  description: "An online community for those of us who geek out over self-hosted software, homelabs, and Linux."
+  mailchimpURL: ""
+  discourse: true
+  social:
+    mastodon: "https://social.linodians.com/@linodians"
+    linkedin: "linodians"
+    github: "https://github.com/linodians"
+  author:
+    email: "cloud@revidian.com"
+    name: "Ricardo N Feliciano"
+
+jsonFeedLimit: 10
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+menus:
+  main-left:
+  - name: "Blog"
+    pageRef: "/blog"
+    weight: 5
+  - name: "Discuss"
+    url: "https://discuss.linodians.com"
+    weight: 10
+  - name: "Social"
+    url: "https://social.linodians.com"
+    weight: 15
+  main-right:
+  - name: "Newsletter"
+    pageRef: "/newsletter"
+    weight: 20
+  - name: "Contact Us"
+    pageRef: "/contact"
+    weight: 25
+  blog:
+    - name: "Latest Posts"
+      pageRef: "/blog/"
+      weight: -1
+    - name: "Submit News"
+      pageRef: "/blog/submit-news"
+      weight: 5
+  social:
+  - identifier: "mastodon"
+    url: "https://social.linodians.com/@linodians"
+    pre: '<i class="fa-brands fa-mastodon"></i>'
+    params:
+      rel: me
+    weight: 1
+  - identifier: "bluesky"
+    url: "https://bsky.app/profile/linodians.com"
+    pre: '<i class="fa-brands fa-bluesky"></i>'
+    weight: 10
+  - identifier: "github"
+    url: "https://github.com/linodians"
+    pre: '<i class="fa-brands fa-github"></i>'
+    weight: 20
+  - identifier: "rss"
+    url: "/blog/index.xml"
+    pre: '<i class="fa-solid fa-rss"></i>'
+    weight: 30

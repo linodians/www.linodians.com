@@ -1,0 +1,16 @@
+# slug: the slug name for the social site.
+# display: The text on the button. If not provided, the slug with the title
+#   filter will be used.
+# fa: The Font Awesome icon name to use. If not provided, it will be
+#   "fa-brands fa-<slug>".
+# facolor: The CSS color value to make the icon. If not provided, it will be
+#   text color.
+# url: the URL the button links to.
+- slug: bluesky
+  facolor: "#0088FF"
+  url: "https://bsky.app/profile/linodians.com"
+- slug: mastodon
+  url: "https://social.linodians.com/@linodians"
+- slug: linkedin
+  display: "LinkedIn"
+  url: "https://www.linkedin.com/showcase/linodians"

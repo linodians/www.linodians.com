@@ -1,0 +1,53 @@
+{{ define "main" }}
+<style type="text/css">
+.social-buttons{
+	margin: 30px auto 0;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	width: 300px;
+	font-size: larger;
+
+	a, i,
+	.svg-inline--fa{
+		color: white;
+	}
+
+	a{
+		border-radius: 8px;
+		background-color: black;
+		padding: 12px 30px;
+		text-align: center;
+	}
+
+	i,
+	.svg-inline--fa{
+		margin-right: 10px;
+	}
+
+	a.bluesky{
+		background-color: white;
+		color: black;
+
+		.svg-inline--fa{
+			color: black;
+		}
+	}
+
+	a.linkedin{
+		background-color: #2867B2;
+	}
+
+	a.mastodon{
+		background-color: #17063B;
+	}
+}
+</style>
+<h1>{{ .Title }}</h1>
+{{ if .Content }}<div class="content">{{ .Content }}</div>{{ end }}
+<div class="social-buttons">
+{{ range $.Site.Data.social }}
+<a class="{{ .slug }}" href="{{ .url }}"><i class="{{ if .fa }}{{ .fa }}{{ else }}fa-brands fa-{{ .slug }}{{ end }}" {{ if .facolor }}style="color: {{ .facolor }}"{{ end }}></i>&nbsp;{{ if .display }}{{ .display }}{{ else }}{{ title .slug }}{{ end }}</a>
+{{ end }}
+</div><!-- .social-buttons -->
+{{ end }}
