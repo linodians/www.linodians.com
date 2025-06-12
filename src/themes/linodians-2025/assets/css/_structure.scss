@@ -7,11 +7,6 @@ body{
     color: $body-color;
 }
 
-header a.toggle{
-	display: none;
-}
-
-
 #main-nav{
 	display: flex;
 	justify-content: space-between;
@@ -27,6 +22,10 @@ header a.toggle{
 		margin: 0;
 		margin-left: 90px;
 	}
+}
+
+#mobile-nav{
+	display: none;
 }
 
 $border-curve: 10px;
