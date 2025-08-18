@@ -7,20 +7,43 @@ body{
     color: $body-color;
 }
 
+body > header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $primary-color;
+  padding: 0 14px;
+  height: 90px;
+
+  a{
+    color: white;
+  }
+
+  .left, .right{
+    flex-grow: 1;
+    width: 100%;
+  }
+
+  .site-logo{
+    img{
+      width: 50px;
+    }
+  }
+
+  #main-nav{
+    display: flex;
+    justify-content: flex-end;
+
+    ul{
+      display: inline-flex;
+    }
+  }
+}
+
 #main-nav{
-	display: flex;
-	justify-content: space-between;
-	padding: 0 10px;
-	height: 40px;
-	line-height: 40px;
 
 	li{
 		padding: 0 10px;
-	}
-
-	.site-title{
-		margin: 0;
-		margin-left: 90px;
 	}
 }
 
@@ -30,46 +53,26 @@ body{
 
 $border-curve: 10px;
 #section-nav{
-	display: flex;
-	flex-wrap: wrap;
-	margin: 10px auto 0;
-	border-radius: $border-curve;
-	background-color: $primary-color;
-	padding-right: 10px;
-	width: 90%;
-	max-width: 1000px;
-	line-height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $linodians-grey-color;
+  background-color: black;
+  height: 35px;
 
-	.site-logo{
-		display: block;
-		position: relative;
-		margin-right: 35px;
-		border-top-left-radius: $border-curve;
-		border-bottom-left-radius: $border-curve;
-		background-color: $linodians-grey-color;
-		padding: 0 14px;
-		height: 60px;
+  ul{
+    gap: 14px;
+
+    li{
+    }
+
+		li:hover > a{
+		}
+
+        a{
+          color: white;
+        }
 	}
-		.site-logo::after{
-			position: absolute;
-			top: 0;
-			left: 36px;
-			background-color: $linodians-grey-color;
-			width: 35px;
-			height: 100%;
-			content: "";
-			transform: skew( -30deg, 0);
-			z-index: 1;
-		}
-
-		a{
-			position: relative;
-			z-index: 3;
-
-			img{
-				height: 30px;
-			}
-		}
 
 		.division{
 			position: absolute;
@@ -82,19 +85,6 @@ $border-curve: 10px;
 		margin: 0 10px;
 	}
 
-	ul{
-		margin-left: auto;
-		height: 60px;
-
-		li{
-			position: relative;
-			padding: 0 10px;
-		}
-
-		li:hover > a{
-			font-weight: bold;
-		}
-	}
 
 	nav{
 
@@ -167,6 +157,7 @@ main{
 body > footer{
 	display: flex;
 	justify-content: space-between;
+    border-top: 6px solid $primary-color;
 	background-color: #1c1c1c;
 	padding: 5px 20px;
 	height: 70px;

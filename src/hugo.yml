@@ -24,7 +24,7 @@ markup:
       unsafe: true
 
 menus:
-  main-left:
+  main:
   - name: "Blog"
     pageRef: "/blog"
     weight: 5
@@ -34,7 +34,6 @@ menus:
   - name: "Social"
     url: "https://social.linodians.com"
     weight: 15
-  main-right:
   - name: "Newsletter"
     pageRef: "/newsletter"
     weight: 20

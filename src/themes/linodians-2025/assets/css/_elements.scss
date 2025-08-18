@@ -168,15 +168,15 @@ table{
 	width: 100%;
 
 	thead{
-		border-bottom: 2px solid white;
+		border-bottom: 2px solid black;
 	}
 
 	tr:nth-child(odd){
-		background-color: #010101;
+		background-color: #DEDEDE;
 	}
 
 	tr:nth-child(even){
-		background-color: #121212;
+		background-color: #999999;
 	}
 
 	td{
