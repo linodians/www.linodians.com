@@ -18,7 +18,7 @@
 		{{ if (fileExists $subLogoURL) }}
 			<img src="/assets/img/{{ .Section }}-logo.svg" />
 		{{ else }}
-			<h2 class="section-title">{{ .Section | title }}</h2>
+			<h2 class="section-title">{{ index .Site.Data.sections .Section }}</h2>
 		{{ end }}
 		</a>
 		{{ partial "menu.html" (dict "menuID" .Section "dir" "h" "page" .) }}
