@@ -137,6 +137,26 @@ $border-curve: 10px;
 
 main{
 	flex-grow: 1;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    width: 90%;
+    max-width: 1000px;
+
+    div.content{
+      figure{
+        img{
+          max-width: 100%;
+        }
+
+        &.center{
+          text-align: center;
+        }
+
+        &.right{
+          text-align: right;
+        }
+      }
+    }
 }
 
 #TableOfContents{

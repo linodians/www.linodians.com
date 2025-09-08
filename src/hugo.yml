@@ -67,3 +67,13 @@ menus:
     url: "/blog/index.xml"
     pre: '<i class="fa-solid fa-rss"></i>'
     weight: 30
+  jsonfeed:
+    - name: "Code"
+      pageRef: "/jsonfeed/code"
+      weight: 5
+    - name: "Spec"
+      pageRef: "/jsonfeed/specification"
+      weight: 10
+    - name: "Mapping"
+      pageRef: "/jsonfeed/mapping-to-jsonfeed"
+      weight: 15
