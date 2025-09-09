@@ -2,7 +2,7 @@
 title: "Mapping RSS & Atom to JSON Feed"
 ---
 
-Though [RSS](http://cyber.harvard.edu/rss/rss.html) and [Atom](https://tools.ietf.org/html/rfc4287) are XML and [JSON Feed](https://jsonfeed.org/version/1.1) isn’t, there are a number of similarities. Here’s how to map them.
+Though [RSS](https://cyber.harvard.edu/rss/rss.html) and [Atom](https://tools.ietf.org/html/rfc4287) are XML and [JSON Feed](https://jsonfeed.org/version/1.1) isn’t, there are a number of similarities. Here’s how to map them.
 
 ## RSS
 
