@@ -12,13 +12,12 @@ title: "Code"
 * [Jekyll feed with attachments](https://github.com/tedchoward/tidbits/blob/master/feed.json) by Ted Howard
 * [Movable Type template](https://gist.github.com/walt/8da71fead3b8ba321f91efd954f0cb32) by Walt Grayson
 * [Movable Type template and EscapeForJSON](https://daringfireball.net/projects/mt-escapeforjson/) by John Gruber
-* [Craft CMS with Element API](https://github.com/craftcms/element-api/tree/v1#json-feed) by Pixel & Tonic
+* [Craft CMS with Element API](https://github.com/craftcms/element-api) by Pixel & Tonic
 * [Rust crate](https://crates.io/crates/jsonfeed) by Paul Woolcock
 * [Hugo feed template](https://gist.github.com/voidfiles/302e8d690a5ef4990e371ce70bca3240) by Alex Kessinger
-* [Hugo feed template](https://github.com/frjo/hugo-theme-zen/blob/master/layouts/_default/list.json.json) by Fredrik Jonsson
+* [Hugo feed template](https://github.com/frjo/hugo-theme-zen) by Fredrik Jonsson. A Hugo theme with JSON Feed support.
 * [Python feed validator](https://github.com/voidfiles/jsonfeedvalidator) by Alex Kessinger
 * [Ruby feedparser gem](https://www.rubyflow.com/p/a57is4-added-new-json-feed-jsonfeed-format-to-the-universal-feedparser-gem) support added by Gerald Bauer
-* [RSS/Atom to JSON Feed converter](https://github.com/appsattic/feed2json.org) and [web service](https://feed2json.org) by Andrew Chilton
 * [PHP JSON Feed Generator](https://github.com/mateusjatenee/php-json-feed) by Mateus Guimarães
 * [PHP JSONFeed library](https://github.com/jdecool/jsonfeed) by Jérémy DECOOL
 * [PHP feed-io library](https://feed-io.net) by Alexandre Debril
