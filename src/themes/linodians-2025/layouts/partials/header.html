@@ -3,7 +3,7 @@
 	<div id="mobile-nav">
 		<span class="site-logo"><img src="/img/linodians-logo--icon.svg"></span>
 		<strong class="site-title"><a href="/">{{ .Site.Title }}</a></strong>
-		<a class="toggle" onclick="toggleMainNav();"><span class="fa fa-bars"></span></a>
+		<a class="toggle" onclick="toggleMainNav();" data-proofer-ignore><span class="fa fa-bars"></span></a>
 	</div>
 	<nav id="main-nav">
 		{{ partial "menu.html" (dict "menuID" "main-left" "dir" "h" "page" .) }}
