@@ -35,7 +35,7 @@ jobs:
       - name: "Test Website (extended)"
         if: "${{ github.event_name == 'schedule' }}"
         run: |
-          htmlproofer ./src/public/
+          htmlproofer --checks "Links,Images,Scripts,Favicon,OpenGraph" --ignore-missing-alt ./src/public/
       - name: "Test Website"
         if: "${{ github.event_name != 'schedule' }}"
         run: |
