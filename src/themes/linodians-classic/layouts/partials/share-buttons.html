@@ -1,0 +1,16 @@
+<div class="share-buttons">
+	<div class="share-down">Share<br /><span class="fa fa-chevron-down"></span></div>
+	<div class="share-right">Share <span class="fa fa-chevron-right"></span></div>
+	<a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}&display=popup" title="Share on Facebook" target="_blank">
+		<span class="fab fa-facebook-f"></span>
+	</a>
+	<a class="email" href="mailto:?subject=Read%20This%20Article:%20{{ .Title | urlize }}&body=Check%20this%20out%20from%20Linodians:%20{{ .Permalink }}" title="Share via email" target="_blank" data-proofer-ignore>
+		<span class="fa fa-envelope"></span>
+	</a>
+	<a class="linkedin" href="https://www.linkedin.com/shareArticle?url={{ .Permalink }}&title={{ .Title | urlize }}&mini=true&source=Linodians" title="Share on LinkedIn" target="_blank">
+		<span class="fab fa-linkedin"></span>
+	</a>
+	<a class="reddit" href="https://www.reddit.com/submit?url={{ .Permalink }}&title={{ .Title | urlize }}" title="Share on Reddit" target="_blank">
+		<span class="fab fa-reddit-alien"></span>
+	</a>
+</div>

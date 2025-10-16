@@ -1,0 +1,14 @@
+{{- $currentPage := . -}}
+<header>
+	<div id="site-branding">
+		<a class="site" href="{{ .Site.BaseURL  }}"><img class="logo" src="/img/linodians-logo--icon.svg"/>{{ .Site.Title }}</a>
+		<a class="section" href="{{ .Site.BaseURL  }}">{{ .Section | title }}</a>
+	</div>
+	<nav class="section">
+		{{ partial "menu.html" (dict "menuID" .Section "dir" "h" "page" .) }}
+	</nav>
+
+	<div id="mobile-nav">
+		<a class="toggle" onclick="toggleMainNav();" data-proofer-ignore><span class="fa fa-bars"></span></a>
+	</div>
+</header>
