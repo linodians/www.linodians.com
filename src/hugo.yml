@@ -27,17 +27,18 @@ ignoreFiles:
   - "/content/.*/README.md$"
 
 menus:
-  main-left:
+  main:
   - name: "Blog"
     pageRef: "/blog"
     weight: 5
   - name: "Discuss"
     url: "https://discuss.linodians.com"
+    title: "The Linodians forum"
     weight: 10
+    post: '<i class="fa-solid fa-link"></i>'
   - name: "Social"
     url: "https://social.linodians.com"
     weight: 15
-  main-right:
   - name: "JSON Feed"
     pageRef: "/jsonfeed"
     weight: 20
