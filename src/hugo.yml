@@ -35,10 +35,11 @@ menus:
     url: "https://discuss.linodians.com"
     title: "The Linodians forum"
     weight: 10
-    post: '<i class="fa-solid fa-link"></i>'
+    post: "fa-solid fa-up-right-from-square"
   - name: "Social"
     url: "https://social.linodians.com"
     weight: 15
+    post: "fa-solid fa-up-right-from-square"
   - name: "JSON Feed"
     pageRef: "/jsonfeed"
     weight: 20

@@ -22,6 +22,9 @@
     {{- $name := .Name }}
     {{- $pre := .Pre }}
     {{- $post := .Post }}
+	{{- if ne .Post "" }}
+		{{- $post = (printf "<i class=\"%s\"></i>" .Post) | safeHTML }}
+	{{- end }}
     {{- with .Identifier }}
       {{- with T . }}
         {{- $name = . }}

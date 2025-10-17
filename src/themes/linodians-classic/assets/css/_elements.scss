@@ -1,3 +1,7 @@
+.site-title{
+  font-family: "Baloo 2", "Ubuntu", sans-serif;
+}
+
 .btn{
 	border-radius: 5px;
 	text-decoration: none;
@@ -24,6 +28,11 @@ ul.menu.h{
 
 	&.h > li{
 	}
+
+    a .svg-inline--fa{
+      margin-left: 4px;
+      font-size: smaller;
+    }
 }
 
 
