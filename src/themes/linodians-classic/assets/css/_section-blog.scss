@@ -81,3 +81,10 @@ body.section-blog{
 		}
 	}
 }
+
+// Specific to the blog index page
+body.section-blog.section{
+  main header{
+    background-color: #e8ede8;
+  }
+}
