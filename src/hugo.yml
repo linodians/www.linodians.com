@@ -26,6 +26,12 @@ markup:
 ignoreFiles:
   - "/content/.*/README.md$"
 
+outputFormats:
+  jsonFeed:
+    mediaType: "application/json"
+    baseName: "feed"
+    isPlainText: true
+
 menus:
   main:
   - name: "Blog"
