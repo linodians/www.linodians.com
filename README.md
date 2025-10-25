@@ -16,6 +16,18 @@ hugo -s src serve --open
 
 It'll then open in your default browser at `http://localhost:1313/`.
 
+## Contributing
+
+### Glossary
+
+To add a new glossary term, start by creating the file:
+
+```bash
+hugo -s src new content --kind=glossary docs/reference/glossary/<term-slug>.md
+```
+
+Then edit the file, filling in the information.
+
 
 ## License
 
