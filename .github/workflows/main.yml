@@ -39,4 +39,4 @@ jobs:
       - name: "Test Website"
         if: "${{ github.event_name != 'schedule' }}"
         run: |
-          htmlproofer --disable-external --checks "Links,Images,Scripts,Favicon,OpenGraph" --ignore-missing-alt ./src/public/
+          htmlproofer --disable-external --checks "Links,Images,Scripts,Favicon,OpenGraph" --ignore-missing-alt --ignore-urls "/www.reddit.com/,/www.npmjs.com/" ./src/public/
