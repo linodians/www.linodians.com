@@ -8,30 +8,16 @@ on:
 jobs:
   build:
     runs-on: ubuntu-24.04
+    container: hubci/hugo:edge
     steps:
       - name: Checkout
         uses: actions/checkout@v5.0.0
         with:
           fetch-depth: 0
-      - name: Set up Go
-        uses: actions/setup-go@v6.0.0
-        with:
-          go-version: '1.25.1'
-      - name: "Install Hugo"
-        run: |
-          CGO_ENABLED=1 go install -tags extended github.com/gohugoio/hugo@v0.150.0
-          hugo version
       - name: "Build Website"
         run: |
           hugo -s src
       - run: 'echo "DEBUG" && ls -lah src/public'
-      - uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.3'
-      - name: "Install HTML Proofer"
-        run: |
-          gem install html-proofer
-          htmlproofer --version
       - name: "Test Website (extended)"
         if: "${{ github.event_name == 'schedule' }}"
         run: |
