@@ -1,0 +1,22 @@
+{{- $currentPage := . -}}
+<p>Partial actually used: {{ templates.Current.Name }}</p>
+<header>
+	<div class="site-branding">
+		<a class="site" href="{{ .Site.BaseURL  }}"><img class="logo" src="/img/linodians-logo--icon.svg"/>Linodians</a>
+	</div>
+	<div class="site-branding">
+		<a class="site" href="{{ .Site.BaseURL  }}"><img class="logo" src="/img/linodians-logo--icon.svg"/>This is a section specific header.</a>
+	</div>
+	{{ if .Section }}
+	<nav class="section">
+		{{ partial "menu.html" (dict "menuID" .Section "dir" "h" "page" .) }}
+	</nav>
+	{{ else }}
+	<nav class="main">
+		{{ partial "menu.html" (dict "menuID" "main" "dir" "h" "page" .) }}
+	</nav>
+	{{ end }}
+	<div id="mobile-nav">
+		<a class="toggle" onclick="toggleMainNav();" data-proofer-ignore><span class="fa fa-bars"></span></a>
+	</div>
+</header>
