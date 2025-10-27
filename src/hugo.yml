@@ -23,6 +23,9 @@ markup:
     renderer:
       unsafe: true
 
+ignoreFiles:
+  - "/content/.*/README.md$"
+
 menus:
   main-left:
   - name: "Blog"
