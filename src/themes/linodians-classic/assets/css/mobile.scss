@@ -1,24 +1,9 @@
 @import "colors";
 
-/* Rules without a media query present take affect when the webpage is 1,200px 
- * or less. */
-main.list,
-main.single{
-}
-
-
-/************************************************
- * <= 1050px width
- * *********************************************/
-@media(max-width: 1050px){
-}
-
-
 /************************************************
  * <= 800px width
  * *********************************************/
 @media(max-width: 800px){
-
 
 	#main-nav .site-title{
 		display: none;
@@ -96,12 +81,6 @@ main.single{
 		}
 	}
 
-	a.toggle{
-		display: block !important;
-		font-size: 2.2rem;
-		z-index: 100;
-        cursor: pointer;
-	}
 
 	#main-nav{
 		position: absolute;

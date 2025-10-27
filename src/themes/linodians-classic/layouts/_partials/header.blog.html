@@ -2,8 +2,10 @@
 <p>Partial actually used: {{ templates.Current.Name }}</p>
 <header>
 	<div class="site-branding">
-		<a class="site" href="{{ .Site.BaseURL  }}"><img class="logo" src="/img/linodians-logo--icon.svg"/>{{ .Site.Title }}</a>
-		<a class="section" href="{{ .Site.BaseURL  }}">{{ .Section | title }}</a>
+		<a class="site" href="{{ .Site.BaseURL  }}"><img class="logo" src="/img/linodians-logo--icon.svg"/>BLOGSECTION{{ .Site.Title }}</a>
+	</div>
+	<div class="site-branding">
+		<a class="site" href="{{ .Site.BaseURL  }}"><img class="logo" src="/img/linodians-logo--icon.svg"/>This is a blog specific header.</a>
 	</div>
 	{{ if .Section }}
 	<nav class="section">

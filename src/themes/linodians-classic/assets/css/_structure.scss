@@ -3,6 +3,7 @@ body{
 	flex-direction: column;
 	justify-content: space-between;
 	background-color: $body-bg-color;
+    min-width: 400px;
 	min-height: 100vh;
     color: $body-color;
 }
@@ -16,11 +17,6 @@ body > header{
 
   a{
     color: white;
-  }
-
-  .left, .right{
-    flex-grow: 1;
-    width: 100%;
   }
 
   .site-branding{
@@ -39,6 +35,15 @@ body > header{
 
   .nav.section{
     flex-grow: 1;
+  }
+
+  @media(max-width: 800px){
+	a.toggle{
+		display: block !important;
+		font-size: 2.2rem;
+		z-index: 100;
+        cursor: pointer;
+	}
   }
 }
 

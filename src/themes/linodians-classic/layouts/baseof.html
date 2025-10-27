@@ -23,7 +23,10 @@
 	<script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 </head>
 <body class="{{ .Kind }}{{ with .Section }} section-{{ . }}{{ end }} type-{{ .Type }} {{ with .Layout }} layout-{{ . }}{{ end }}">
-	{{ partial "header" . -}}
+	{{ $headerTpl := "header" }}
+	{{ with .Section }}{{ $headerTpl = printf "%s.%s.html" $headerTpl . }}{{ end }}
+	<p>DEBUG: Partial should be: _partials/{{ $headerTpl }}</p>
+	{{ partial $headerTpl . -}}
 	<main>
 		{{ block "main" . }}{{ end }}
 	</main>

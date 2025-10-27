@@ -1,6 +1,7 @@
 baseurl: "https://www.linodians.com/"
 title: "Linodians"
 theme: "linodians-classic"
+languageCode: 'en-EN'
 
 enableEmoji: true
 
@@ -30,6 +31,9 @@ menus:
   main:
   - name: "Blog"
     pageRef: "/blog"
+    weight: 5
+  - name: "Docs"
+    pageRef: "/docs"
     weight: 5
   - name: "Discuss"
     url: "https://discuss.linodians.com"
