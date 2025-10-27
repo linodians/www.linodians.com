@@ -26,12 +26,6 @@ markup:
 ignoreFiles:
   - "/content/.*/README.md$"
 
-outputFormats:
-  jsonFeed:
-    mediaType: "application/json"
-    baseName: "feed"
-    isPlainText: true
-
 menus:
   main:
   - name: "Blog"
@@ -46,9 +40,6 @@ menus:
     url: "https://social.linodians.com"
     weight: 15
     post: "fa-solid fa-up-right-from-square"
-  - name: "JSON Feed"
-    pageRef: "/jsonfeed"
-    weight: 20
   - name: "Contact Us"
     pageRef: "/contact"
     weight: 25
@@ -78,13 +69,3 @@ menus:
     url: "/blog/index.xml"
     pre: '<i class="fa-solid fa-rss"></i>'
     weight: 30
-  jsonfeed:
-    - name: "Code"
-      pageRef: "/jsonfeed/code"
-      weight: 5
-    - name: "Spec"
-      pageRef: "/jsonfeed/specification"
-      weight: 10
-    - name: "Mapping"
-      pageRef: "/jsonfeed/mapping-to-jsonfeed"
-      weight: 15
