@@ -1,0 +1,13 @@
+{{ define "main" }}
+<section class="hero">
+	{{ partial "homepage-icons.html" }}
+	<div class="intro">
+		<h1 class="site-title">{{ .Site.Title }}</h1>
+		<p>{{ .Site.Params.description }}</p>
+	</div>
+	{{ partial "homepage-icons.html" }}
+</section>
+<section>
+	<p>Check out our <a  href="/blog/">blog posts</a>. More content coming soon.</p>
+</section>
+{{ end }}

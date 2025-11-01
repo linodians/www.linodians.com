@@ -1,0 +1,32 @@
+{{ define "main" }}
+{{ $authorImg := resources.Get "img/avatars/felicianotech.png" }}
+{{ $authorImg := $authorImg.Resize "64x64 Lanczos" }}
+<article id="{{ .File.UniqueID }}" class="full">
+	{{ $imgPath := "" }}
+	{{ with .Params.feature }}{{ $imgPath = (printf "img/feature/%s" .) }}{{ else }}{{ $imgPath = "img/feature/brand-design-1.png" }}{{ end }}
+	{{ $origImg := resources.Get $imgPath }}
+	{{ $newImg := $origImg.Fill "1000x500 Lanczos" }}
+	<img class="feature{{ if .Params.featureClass }} {{ .Params.featureClass }}{{ end }}" src="{{ $newImg.RelPermalink }}">
+	<header>
+		<h1>{{ .Title }}</h1>
+		<div class="meta">
+			<span><img class="avatar circle-mask" src="{{ $authorImg.RelPermalink }}"> By {{ (index .Site.Data.people .Params.author).name }}</span>
+			<span>·</span>
+			<time datetime="{{ .Date }}">{{ .Date.Format "Posted January 2, 2006" }}</time>
+		</div>
+	{{ if and (.Params.feature) (ne .Params.featureHide true) }}
+	{{ end }}
+	</header>
+	<div class="content">{{ .Content }}</div>
+</article>
+{{ if .Site.Params.discourse }}
+	{{ if hugo.IsProduction }}
+		{{ partial "discourse-comments.html" . }}
+	{{ else }}
+		<p>In production mode, Discourse comments will appear here.</p>
+	{{ end }}
+{{ else }}
+	<p>Discourse powered comments can appear here if you turn the feature on.</p>
+{{ end }}
+{{ partial "share-buttons" . }}
+{{ end }}

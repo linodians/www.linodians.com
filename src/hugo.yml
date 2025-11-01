@@ -1,6 +1,7 @@
 baseurl: "https://www.linodians.com/"
 title: "Linodians"
-theme: "linodians-2025"
+theme: "linodians-classic"
+languageCode: 'en-US'
 
 enableEmoji: true
 
@@ -26,18 +27,33 @@ markup:
 ignoreFiles:
   - "/content/.*/README.md$"
 
+outputFormats:
+  jsonFeed:
+    mediaType: "application/json"
+    baseName: "feed"
+    isPlainText: true
+
 menus:
-  main-left:
-  - name: "Blog"
-    pageRef: "/blog"
+  global:
+  - name: "www"
+    pageRef: "/"
     weight: 5
   - name: "Discuss"
     url: "https://discuss.linodians.com"
+    title: "The Linodians forum"
     weight: 10
+    post: "fa-solid fa-up-right-from-square"
   - name: "Social"
     url: "https://social.linodians.com"
     weight: 15
-  main-right:
+    post: "fa-solid fa-up-right-from-square"
+  main:
+  - name: "Blog"
+    pageRef: "/blog"
+    weight: 5
+  - name: "Docs"
+    pageRef: "/docs"
+    weight: 5
   - name: "JSON Feed"
     pageRef: "/jsonfeed"
     weight: 20
@@ -50,6 +66,10 @@ menus:
       weight: -1
     - name: "Submit News"
       pageRef: "/blog/submit-news"
+      weight: 5
+  docs:
+    - name: "Glossary"
+      pageRef: "/docs/reference/glossary/"
       weight: 5
   social:
   - identifier: "mastodon"

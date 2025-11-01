@@ -1,0 +1,19 @@
+.site-branding{
+  display: flex;
+  gap: 6px;
+  font-family: "Baloo 2", "Ubuntu", sans-serif;
+  font-weight: bold;
+  
+  .site{
+    display: flex;
+    gap: 10px;
+
+    .logo{
+      height: 30px;
+    }
+  }
+
+  .section{
+    opacity: 0.7;
+  }
+}
