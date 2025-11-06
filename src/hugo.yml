@@ -4,6 +4,7 @@ theme: "linodians-classic"
 languageCode: 'en-US'
 
 enableEmoji: true
+uglyURLs: true
 
 params:
   description: "An online community for those of us who geek out over self-hosted software, homelabs, and Linux."
