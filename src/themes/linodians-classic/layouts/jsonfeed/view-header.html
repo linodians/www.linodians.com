@@ -1,7 +1,14 @@
 {{- $currentPage := . -}}
+{{ $logo := resources.Get "img/logos/jsonfeed.svg" }}
+<nav class="global">
+	<div class="site-branding">
+		<a class="site" href="/"><img class="logo" src="/img/linodians-logo--icon.svg"></a>
+	</div>
+	{{ partial "menu.html" (dict "menuID" "global" "dir" "h" "page" .) }}
+</nav>
 <header>
 	<div class="site-branding">
-		<a class="site" href="/"><img class="logo" src="/img/linodians-logo--icon.svg">JSON Feed</a>
+		<a class="site" href="/{{ .Section }}/"><img class="logo" src="{{ $logo.RelPermalink }}">JSON Feed</a>
 	</div>
 	{{ if .Section }}
 	<nav class="section">

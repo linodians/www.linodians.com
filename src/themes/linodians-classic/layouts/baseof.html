@@ -23,9 +23,6 @@
 	{{- partial "head-snippets.html" . }}
 </head>
 <body class="{{ .Kind }}{{ with .Section }} section-{{ . }}{{ end }} type-{{ .Type }} {{ with .Layout }} layout-{{ . }}{{ end }}">
-	<nav class="global">
-		{{ partial "menu.html" (dict "menuID" "global" "dir" "h" "page" .) }}
-	</nav>
 	{{ .Render "view-header" -}}
 	<main>
 		{{ block "main" . }}{{ end }}
