@@ -1,4 +1,8 @@
 {{- $currentPage := . -}}
+<nav class="global">
+	<div><!-- Intentionally empty in this view. --></div>
+	{{ partial "menu.html" (dict "menuID" "global" "dir" "h" "page" .) }}
+</nav>
 <header>
 	<div class="site-branding">
 		<a class="site" href="/"><img class="logo" src="/img/linodians-logo--icon.svg">{{ .Site.Title }}</a>
