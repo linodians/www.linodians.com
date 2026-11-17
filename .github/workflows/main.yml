@@ -14,13 +14,6 @@ jobs:
         uses: actions/checkout@v5.0.0
         with:
           fetch-depth: 0
-      - name: "Install Dart SASS"
-        run: |
-          curl -sSL "https://github.com/sass/dart-sass/releases/download/1.108.2/dart-sass-1.108.2-linux-x64.tar.gz" | sudo tar -xz -C /usr/local/
-          sudo ln -s /usr/local/dart-sass/sass /usr/local/bin/sass
-          ls -lah /usr/local
-          whoami
-          hugo env
       - name: "Build Website"
         run: |
           hugo -s src
