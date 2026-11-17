@@ -22,6 +22,7 @@ jobs:
           ls -lah /usr/local/bin
           echo $PATH
           whoami
+          hugo env
       - name: "Build Website"
         run: |
           hugo -s src
