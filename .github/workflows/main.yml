@@ -20,6 +20,8 @@ jobs:
           sudo mv ./dart-sass/sass /usr/local/bin/
           rm -r ./dart-sass
           ls -lah /usr/local/bin
+          echo $PATH
+          whoami
       - name: "Build Website"
         run: |
           hugo -s src
