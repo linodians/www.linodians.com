@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-24.04
-    container: hubci/hugo:0.170.0
+    container: hubci/hugo:edge
     steps:
       - name: Checkout
         uses: actions/checkout@v5.0.0
