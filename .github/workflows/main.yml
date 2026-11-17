@@ -16,7 +16,9 @@ jobs:
           fetch-depth: 0
       - name: "Install Dart SASS"
         run: |
-          curl -sSL "https://github.com/sass/dart-sass/releases/download/1.108.2/dart-sass-1.108.2-linux-x64.tar.gz" | tar -xz - -C /usr/local/bin/ dart-sass/sass
+          curl -sSL "https://github.com/sass/dart-sass/releases/download/1.108.2/dart-sass-1.108.2-linux-x64.tar.gz" | tar -xz
+          mv ./dart-sass/sass /usr/local/bin/
+          rm -r ./dart-sass
       - name: "Build Website"
         run: |
           hugo -s src
